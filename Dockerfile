@@ -17,4 +17,4 @@ COPY . .
 EXPOSE 8080
 
 # Start the application
-CMD ["node", "websocket.js"]
+CMD ["node", "server.js"]

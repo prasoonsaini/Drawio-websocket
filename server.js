@@ -39,7 +39,7 @@ const throttledBroadcast = throttle((user, final_data, isBinary, socket) => {
             client.send(last_data, { binary: isBinary });
         }
     });
-}, 10);
+}, 1000);
 
 wss.on('connection', (socket) => {
     socket.on('error', (err) => console.log(err));
